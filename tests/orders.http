@@ -1,5 +1,25 @@
-### Order creation
+### Order creation - ADMIN
 POST http://localhost:4004/admin/Orders
+Content-Type: application/json;IEEE754Compatible=true
+
+{
+	"orderNo": "TRNSCT101",
+	"items": [
+		{
+			"product_ID" : "ad46389a-eeeb-4f19-b659-e7ec78ddbb3c",
+			"qty": 1,
+			"amount": 35
+		},
+		{
+			"product_ID" : "ad46389a-eeeb-4f19-b659-e7ec78ddbb3c",
+			"qty": 3,
+			"amount": 48.99
+		}
+	]
+}
+
+### Order creation - Catalog user
+POST http://localhost:4004/browse/Orders
 Content-Type: application/json;IEEE754Compatible=true
 
 {
