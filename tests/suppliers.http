@@ -1,0 +1,8 @@
+### Supplier creation
+POST http://localhost:4004/admin/Suppliers
+Content-Type:  application/json
+
+{
+    "ID": 2,
+    "name": "ABC Corp"
+}

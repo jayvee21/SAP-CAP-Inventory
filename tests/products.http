@@ -1,0 +1,11 @@
+### Create a product
+POST http://localhost:4004/admin/Products
+Content-Type: application/json
+
+
+{
+    "title": "A1 Mouse",
+    "description": "Wireless Mouse",
+    "price": 9.99,
+    "supplier_ID": 1
+}
