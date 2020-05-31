@@ -8,4 +8,11 @@ module.exports = cds.service.impl( srv => {
         console.log(payload)
     })
 
+
+    // Name the parameter to each for each row handler
+    srv.after('READ','Products', each =>{
+        console.log("---->", each)
+        if ( each.price <= 99  ) each.title += ' --10% discount'
+    })
+
 })

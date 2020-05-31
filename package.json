@@ -11,7 +11,8 @@
     "sqlite3": "^4.2.0"
   },
   "scripts": {
-    "start": "npx cds run"
+    "start": "npx cds run",
+    "setup": "npm i && cds deploy -2 sqlite:inventories.db"
   },
   "cds": {
     "requires": {
